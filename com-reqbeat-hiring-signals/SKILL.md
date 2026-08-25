@@ -57,6 +57,7 @@ every call.
 - `hiring_pulse`
 - `who_is_hiring_for`
 - `search_jobs`
+- `get_role`
 - `pre_action_brief`
 - `get_changes`
 - `register_webhook`

@@ -2,6 +2,16 @@
 
 Find companies hiring for a role and geo, qualify them, and watch them for changes.
 
+## Community, built on the public API
+
+Community, not an official Reqbeat product. It is built on the same public API any reader
+can call, and it carries no support commitment — no ticket queue stands behind it, and no
+response time is promised.
+
+That is a choice rather than a disclaimer. Reqbeat is self-serve the whole way down;
+nobody is in the loop on an account. A pack that implied a support desk would be
+advertising something that does not exist.
+
 ## Install
 
 ```bash
