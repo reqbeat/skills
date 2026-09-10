@@ -20,7 +20,7 @@ or a press mention.
 One `GET`, no key, real rows off the live index:
 
 ```bash
-curl -s 'https://jobs.signalsapi.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
+curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
 ```
 
 Parameters: `role` (free text over the posting title), `geo` (country),
@@ -32,7 +32,7 @@ keyless call may read — it is a signal, not a paging handle. Connect below to 
 
 ## Connect
 
-`com.reqbeat/hiring-signals` v1.0.0, over streamable-http:
+`com.reqbeat/hiring-signals` v1.0.1, over streamable-http:
 
 ```json
 {
@@ -47,8 +47,21 @@ keyless call may read — it is a signal, not a paging handle. Connect below to 
 }
 ```
 
-Replace the placeholder with your own key. The `X-API-Key` header is required on
-every call.
+Replace the placeholder with your own key.
+
+Or connect with no key at all. Same endpoint -- leaving the `X-API-Key` header
+off runs the read tools in a rate-limited demo mode, so this skill can be tried before
+anyone signs up:
+
+```json
+{
+  "mcpServers": {
+    "com-reqbeat-hiring-signals": {
+      "url": "https://mcp.reqbeat.com/mcp"
+    }
+  }
+}
+```
 
 ## Tools
 

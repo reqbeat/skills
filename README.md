@@ -2,15 +2,13 @@
 
 Find companies hiring for a role and geo, qualify them, and watch them for changes.
 
-## Community, built on the public API
+## What this is
 
-Community, not an official Reqbeat product. It is built on the same public API any reader
-can call, and it carries no support commitment — no ticket queue stands behind it, and no
-response time is promised.
+The Reqbeat agent skill, rendered from the live `server.json` the hosted server publishes.
+Issues → [support@reqbeat.com](mailto:support@reqbeat.com).
 
-That is a choice rather than a disclaimer. Reqbeat is self-serve the whole way down;
-nobody is in the loop on an account. A pack that implied a support desk would be
-advertising something that does not exist.
+The docs repo — install guides, per-client configs, the tool table — is
+[reqbeat/mcp-server](https://github.com/reqbeat/mcp-server).
 
 ## Install
 
@@ -20,12 +18,12 @@ npx skills add reqbeat/skills
 
 Installs `com-reqbeat-hiring-signals/SKILL.md`, which teaches an agent when to reach for
 Reqbeat, how to try it with no key, and how to connect `com.reqbeat/hiring-signals`
-(v1.0.0, streamable-http) once it needs the full index.
+(v1.0.1, streamable-http) once it needs the full index.
 
 ## No key? Try it right now
 
 ```bash
-curl -s 'https://jobs.signalsapi.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
+curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
 ```
 
 Real rows, capped at 25 companies, billed to nobody.
