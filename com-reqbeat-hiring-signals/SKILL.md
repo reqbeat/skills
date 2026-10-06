@@ -20,10 +20,10 @@ or a press mention.
 One `GET`, no key, real rows off the live index:
 
 ```bash
-curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
+curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?q=backend+engineer&geo=United+States'
 ```
 
-Parameters: `role` (free text over the posting title), `geo` (country),
+Parameters: `q` (free text over the posting title), `geo` (country),
 `since` (ISO-8601 lower bound on first-seen), `limit`.
 
 The sandbox serves one page of at most 25 companies and takes no
@@ -32,7 +32,7 @@ keyless call may read — it is a signal, not a paging handle. Connect below to 
 
 ## Connect
 
-`com.reqbeat/hiring-signals` v1.0.1, over streamable-http:
+`com.reqbeat/hiring-signals` v1.1.3, over streamable-http:
 
 ```json
 {
@@ -71,10 +71,14 @@ anyone signs up:
 - `who_is_hiring_for`
 - `search_jobs`
 - `get_role`
+- `find_qualified_reqs`
 - `pre_action_brief`
 - `get_changes`
+- `find_company`
 - `register_webhook`
 - `watch_company`
+- `list_watches`
+- `cancel_watch`
 - `write_outcome`
 
 Call `tools/list` after connecting for each tool's current description and input schema.

@@ -18,12 +18,12 @@ npx skills add reqbeat/skills
 
 Installs `com-reqbeat-hiring-signals/SKILL.md`, which teaches an agent when to reach for
 Reqbeat, how to try it with no key, and how to connect `com.reqbeat/hiring-signals`
-(v1.0.1, streamable-http) once it needs the full index.
+(v1.1.3, streamable-http) once it needs the full index.
 
 ## No key? Try it right now
 
 ```bash
-curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?role=backend+engineer&geo=United+States'
+curl -s 'https://api.reqbeat.com/v1/sandbox/reqs/search?q=backend+engineer&geo=United+States'
 ```
 
 Real rows, capped at 25 companies, billed to nobody.
